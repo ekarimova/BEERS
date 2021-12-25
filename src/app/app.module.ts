@@ -26,7 +26,7 @@ import {CommonModule} from '@angular/common';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' })
   ],
   providers: [BackendService],
   bootstrap: [AppComponent]
